@@ -220,7 +220,7 @@ public class SynchronizedQueue {
             // initialization below to create two Java Threads, one
             // that's passed the producerRunnable and the other that's
             // passed the consumerRunnable.
-            Thread consumer = null;
+            Thread consumer = new Thread(consumerRunnable);
             Thread producer = null;
 
             // TODO - you fill in here to start the threads. More
